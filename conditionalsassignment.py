@@ -19,9 +19,9 @@ else:
     print("Invalid choice!")
 
 
-num1 = int(input("Input the first integer"))
-num2 = int(input("Input the second integer"))
-num3 = int(input("Input the third integer"))
+num1 = input(int("Input the first integer",))
+num2 = input(int("Input the second integer"))
+num3 = input(int("Input the third integer"))
 
 if num1 > num2 and num1 > num3:
     print("This number is the largest", num1)
@@ -58,4 +58,13 @@ else:
 
 if year % 100 == 0:
     print("Century")
+
+if year == 2024:
+    print("Current Year")
+elif year > 2024:
+    print("Future")
+else:
+    print("Past")
+
+
 
