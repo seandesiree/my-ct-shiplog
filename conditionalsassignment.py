@@ -19,9 +19,9 @@ else:
     print("Invalid choice!")
 
 
-num1 = input(int("Input the first integer",))
-num2 = input(int("Input the second integer"))
-num3 = input(int("Input the third integer"))
+num1 = input("Input the first integer",)
+num2 = input("Input the second integer")
+num3 = input("Input the third integer")
 
 if num1 > num2 and num1 > num3:
     print("This number is the largest", num1)
@@ -39,22 +39,24 @@ else:
     print("this is the smallest number", num3)
 
 
-if num1 == num2 or num1 == num3:
+if num1 == num2 and num1 == num3:
+    print("All three are equal")
+elif num1 == num2 or num1 == num3:
     print("Two numbers are equal")
 elif num2 == num3:
     print("Two numbers are equal")
-elif num1 == num2 == num3:
-    print("All three are equal")
 else:
     print(0)
 
 year = int(input())
-days_in_year = int(input())
 
-if days_in_year > 365:
-    print("This is a leap year!")
+if (year % 400 == 0) and (year % 100 == 0):
+    print("This is a leap year")
+
+elif (year % 4 == 0) and (year % 100 != 0):
+    print("This is a leap year")
 else:
-    print("This is not a leap year.")
+    print("This is not a leap year")
 
 if year % 100 == 0:
     print("Century")
