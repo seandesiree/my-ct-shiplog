@@ -36,15 +36,22 @@ print(meal)
 try:
     x = 1 / 0
 except ZeroDivisionError:
-    pass
+    print("You can't divide a 0")
+
 
 try:
     y = 1 / "apple"
-except ValueError:
-    pass
+except TypeError:
+    print("You can't divide a integer and a string")
 
 
 file = input("What is the name of your file? ")
+user_input = open("thisfile.txt")
+try:
+    user_input = open("thisfile.txt")
+    print("There is something here!")
+except:
+    pass
 
 
 weather = input("Enter the weather: sunny, rainy, or cold: ")
@@ -56,3 +63,32 @@ print(accessories)
 
 sun_burn = "sunscreen" if weather == "sunny" else "sunglasses"
 
+
+
+try:
+    user_input = open("thisfile.txt")
+    print('there is something herre!')
+except:
+    pass
+
+
+import random
+
+memory_usage = random.randint(0, 100)
+space = random.randint(0, 100)
+cpu_usage = random.randint(0, 100)
+
+if cpu_usage > 90:
+    print("High CPU usage!")
+elif cpu_usage > 80 and cpu_usage <= 90:
+    pass
+
+if memory_usage > 90:
+    print("High Memory usage!")
+elif cpu_usage > 80 and cpu_usage <= 90:
+    pass
+
+if space > 90:
+    print("High Space usage!")
+elif cpu_usage > 80 and cpu_usage <= 90:
+    pass
