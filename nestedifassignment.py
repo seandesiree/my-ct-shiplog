@@ -85,10 +85,10 @@ elif cpu_usage > 80 and cpu_usage <= 90:
 
 if memory_usage > 90:
     print("High Memory usage!")
-elif cpu_usage > 80 and cpu_usage <= 90:
+elif memory_usage > 80 and memory_usage <= 90:
     pass
 
 if space > 90:
     print("High Space usage!")
-elif cpu_usage > 80 and cpu_usage <= 90:
+elif space > 80 and space <= 90:
     pass
