@@ -46,7 +46,6 @@ except TypeError:
 
 
 file = input("What is the name of your file? ")
-user_input = open("thisfile.txt")
 try:
     user_input = open("thisfile.txt")
     print("There is something here!")
