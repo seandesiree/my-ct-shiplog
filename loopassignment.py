@@ -12,7 +12,7 @@ for day in days:
     current_feeling = random.choice(moods)
     print("On", day, "I feel", current_feeling)
 
-num = [0]
+#!!
 for num in range(11,1, -1):
     print(num)
 
@@ -50,14 +50,14 @@ for hour in range(1, 24):
         continue
     print("At", hour, "I feel", current_mood)
 
-        
+#!!        
 list_numbers = [15, 16, 17, 18, 19, 20, 21]       
 
 for a in list_numbers:
     if a in list_numbers == 18:
         break
-else:
-    print("The number was not found")
+    else:
+        print("The number was not found")
 
 
 # The += is telling the code to keep interatiing through the while lopp, adding 1 until the marshmallow count is no longer less than 5. 
