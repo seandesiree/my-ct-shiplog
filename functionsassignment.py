@@ -70,6 +70,7 @@ def average_grade():
         print("Grading Assistant")
         print("1. Average")
         print("2. Letter grade")
+        print("When you are done, please type 'done' ")
         choice = input("Which option would you like to choose? ")
 
         if choice == "1":
@@ -98,6 +99,10 @@ def average_grade():
                         print("F")
             else:
                 print("Add grades")
+        elif choice == "done":
+            break
+        else:
+            print("Please enter option 1 or 2 ")
 
 average_grade() 
 
@@ -121,7 +126,6 @@ quiz(questions, answers)
 
 activities = ["Did you walk today? ", "Did you rock climb today? ", "Did you box today? "] 
 duration = [10, 50, 40]
-calories_burned = duration * 3
 
 def workout_tracker(activites, duration):
     time = 0
@@ -130,6 +134,8 @@ def workout_tracker(activites, duration):
         if user_answer == "Yes":
             time += duration[i]
             calories_burned = time * 3.5
+        else:
+            print("Tomorrow is another day!")
     print(f"You worked out for {time} minutes and burned {calories_burned}")
 
 workout_tracker(activities, duration)
